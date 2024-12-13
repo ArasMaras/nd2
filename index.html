@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Home UI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #543A14;
+        }
+
+        .container {
+            background: #FFF0DC;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        .section .control {
+            margin-bottom: 10px;
+        }
+
+        .control label {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 5px;
+            color: #666;
+        }
+
+        .control input[type="range"] {
+            width: 100%;
+        }
+
+        .control button {
+            background-color: #F0BB78;
+            color: #131010;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            width: 100%;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .control button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Smart Home UI</h1>
+
+        <!-- Connection Simulation -->
+        <div class="section">
+            <button id="connect-home">Connect to Smart Home</button>
+            <p id="connection-status">Status: Disconnected</p>
+        </div>
+
+        <!-- Lighting Control -->
+        <div class="section" id="lighting-control">
+            <h2>Lighting</h2>
+            <div class="control">
+                <label for="light-brightness">Brightness</label>
+                <input type="range" id="light-brightness" min="0" max="100" value="50">
+            </div>
+            <div class="control">
+                <button id="toggle-light">Toggle Light</button>
+            </div>
+        </div>
+
+        <!-- Heating Control -->
+        <div class="section" id="heating-control">
+            <h2>Heating</h2>
+            <div class="control">
+                <label for="temperature">Temperature</label>
+                <input type="range" id="temperature" min="15" max="30" value="22">
+                <span id="temperature-display">22°C</span>
+            </div>
+        </div>
+
+        <!-- Security Control -->
+        <div class="section" id="security-control">
+            <h2>Security</h2>
+            <div class="control">
+                <button id="toggle-security">Toggle Security</button>
+            </div>
+        </div>
+
+        <!-- Add Smart Device -->
+        <div class="section" id="add-device-section">
+            <h2>Add Smart Device</h2>
+            <div class="control">
+                <label for="device-name">Device Name</label>
+                <input type="text" id="device-name" placeholder="Enter device name">
+            </div>
+            <div class="control">
+                <button id="add-device">Add Device</button>
+            </div>
+            <ul id="device-list"></ul>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

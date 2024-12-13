@@ -1,0 +1,114 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f0f0f0;
+}
+
+.container {
+    background: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.section .control {
+    margin-bottom: 10px;
+}
+
+.control label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.control input[type="range"] {
+    width: 100%;
+}
+
+.control button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.control button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Connection Status */
+#connection-status {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #777;
+}
+
+
+/* Smart Device Control Styles */
+.smart-device-control {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background: #f9f9f9;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.smart-device-control label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.smart-device-control button {
+    margin-top: 10px;
+    background-color: #28a745;
+    color: #fff;
+}
+
+.smart-device-control button:hover {
+    background-color: #218838;
+}
+
+/* Device List */
+#device-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+#device-list li {
+    background: #f9f9f9;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
